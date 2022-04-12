@@ -1,6 +1,8 @@
-<nav>
-  <a class="button" routerLink="/user-form" routerLinkActive="activebutton">Form</a> |
-  <a class="button" routerLink="/carousel" routerLinkActive="activebutton">Carousel</a>
-</nav>
+<div class="container">
+  <ul class="nav nav-pills">
+    <li [routerLinkActive]="['active']"><a href="#" routerLink="/user-form">Form</a></li>
+    <li [routerLinkActive]="['active']"><a href="#" routerLink="/carousel">Carousel</a></li>
+  </ul>
+  <router-outlet></router-outlet>
+</div>
 
-<router-outlet></router-outlet>
