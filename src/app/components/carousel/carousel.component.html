@@ -1,1 +1,14 @@
-<p>carousel works!</p>
+<div class="carousel-wrapper">
+    <div class="carousel_prev-button" [ngClass]="{'disabled': currentIndex == 0}" (click)="prev()">
+        <a class="carousel-control-prev-icon"></a>
+    </div>
+    <div class="carousel">
+        <div class="item" *ngFor="let item of currentList">
+            <img src="{{item.url}}" />
+        </div>
+    </div>
+    <div class="carousel_next-button" [ngClass]="{'disabled': currentIndex == splicedImages.length-1}" (click)="next()">
+        <a class="carousel-control-next-icon"></a>
+    </div>
+</div>
+<div>Total Items are {{totalItems}}. Displaying page {{currentIndex+1}} of {{splicedImages.length}}</div>

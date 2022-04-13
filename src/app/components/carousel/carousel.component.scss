@@ -1,0 +1,58 @@
+.carousel-wrapper {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 25px;
+  display: flex;
+}
+.carousel {
+  display: flex;
+  width: calc(100% - 100px);
+  font-size: 0;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: auto;
+  // margin: -10px 0 0 -10px;
+}
+.item {
+  display: inline-block;
+  margin: 10px;
+  flex-grow: 1;
+  height: 100px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin-left: auto;
+  display: block;
+  margin-right: auto;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3e%3cpath d='M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z'/%3e%3c/svg%3e") !important;
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3e%3cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z'/%3e%3c/svg%3e") !important;
+}
+a.carousel-control-next-icon,
+a.carousel-control-prev-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.carousel_prev-button,
+.carousel_next-button {
+  z-index: 2;
+  opacity: 1;
+  line-height: 100px;
+  background-color: gray;
+  text-align: center;
+  cursor: pointer;
+  width: 50px;
+  margin: auto;
+}
+.disabled {
+    opacity: 0.3;
+}
